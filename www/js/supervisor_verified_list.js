@@ -427,7 +427,7 @@ gj =superr_objj.verification_user_id;
 if( hj == gj ){
   //alert(hj+'hj'+gj+'gj');
   personal_deta = personal_details_array[a];
-alert(personal_deta.user_id+'personal_det');
+//alert(personal_deta.user_id+'personal_det');
 }
 }
 
@@ -1040,17 +1040,17 @@ var address_obja=address_obja;
 var personal_deta=personal_deta;
 
 if(qualification_id == '1' || qualification_id == '2' || qualification_id == '3' || qualification_id == '4' || qualification_id == '5' || qualification_id == '6'){
-alert('currentob education succes');
+//alert('currentob education succes');
   if(eductional_objq !== undefined){
 if(supervisor_final_commanda !== undefined){
-  alert('supervisor_final_commanda education succes');
+  //alert('supervisor_final_commanda education succes');
 sessionStorage.setItem("currentobj_veri",JSON.stringify(superr_objj));
 sessionStorage.setItem("currentobj_educational_records_veri",JSON.stringify(eductional_objq));
 sessionStorage.setItem("supervisor_final_commanda",JSON.stringify(supervisor_final_commanda));
 
 
     if(personal_deta !== undefined ){
-   alert(personal_deta+'sessionStorage edu');
+  // alert(personal_deta+'sessionStorage edu');
        sessionStorage.setItem("personal_deta",JSON.stringify(personal_deta)); 
 sessionStorage.setItem("currentobj_educational_records_veri",JSON.stringify(eductional_objq));
 sessionStorage.setItem("supervisor_final_commanda",JSON.stringify(supervisor_final_commanda));

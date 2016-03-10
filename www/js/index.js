@@ -137,7 +137,7 @@ $(document).off('click', '#resetonepage').on('click', '#resetonepage', function(
    return false;
 });
 $(document).off('click', '#chngpass').on('click', '#chngpass', function() { 
-  alert('chngpass');
+  //alert('chngpass');
             if($('#userchn').val().length > 0 && $('#chngpassword').val().length > 0){
         console.log($('#check_userpass').serialize());
                     $.ajax({url: 'http://staging.eimpressive.com/slim_four_rips/chngpass.php',

@@ -429,7 +429,7 @@ gj =superr_objj.verification_user_id;
 if( hj == gj ){
   //alert(hj+'hj'+gj+'gj');
   personal_deta = personal_details_array[a];
-alert(personal_deta.user_id+'personal_det');
+//alert(personal_deta.user_id+'personal_det');
 }
 }
 
