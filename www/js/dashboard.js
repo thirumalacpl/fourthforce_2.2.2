@@ -56,10 +56,10 @@ state=regionArray_array.state;
  
  gcm_idpass = gcm_reg_id_array[a];
  gcm_idpass = gcm_idpass.user_id;
-  alert(gcm_regidexi);
+  alert(gcm_regidexi+'gcm_regid');
 }
-}
-*/
+}*/
+
 //alert(user_id);
 
 
@@ -188,13 +188,12 @@ var app = {
   gcm_id = gcm_reg_id_array[a];
   gg = gcm_id.user_id;
  gcm_regidexi = gcm_id.gcm_regid;
-  if(user_id == gg ){
+ // if(user_id == gg ){
  
  gcm_idpass = gcm_reg_id_array[a];
  gcm_idpass = gcm_idpass.user_id;
   alert(gcm_regidexi);
 if(gcm_regidexi != gcm_regid ){
-
   //alert(gcm_regid+'gcm_regid');
   //alert(E_Mail+'E_Mail');
   //alert(username+'username');
@@ -236,7 +235,7 @@ alert('Network error has occurred please try again!');
 }); 
 }
   //end for
-}
+//}
 }
 
     });
