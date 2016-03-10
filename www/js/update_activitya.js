@@ -436,8 +436,9 @@ var settings = {
     //alert('success');
     sessionStorage.setItem("ret",JSON.stringify(data));
     ret =  JSON.parse(sessionStorage.getItem("ret"));
+    alert(ret);
     var res = ret.slice(137,300);
-   // alert(res+'res');
+    alert(res+'res');
    //alert(verification_user_id+'verification_user_id');
       //alert(coordinator_id+'coordinator_id');
          //alert(res+'res');

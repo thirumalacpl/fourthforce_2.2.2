@@ -48,20 +48,18 @@ state=regionArray_array.state;
 //alert(region+'regionArray_array');
 //alert(user_id+'user_id');
 
-for(a=0;a<gcm_reg_id_array.length;a++){
+/*for(a=0;a<gcm_reg_id_array.length;a++){
   gcm_id = gcm_reg_id_array[a];
   gg = gcm_id.user_id;
  gcm_regidexi = gcm_id.gcm_regid;
   if(user_id == gg ){
-  //alert(gcm_id.username+'aaa ganesan.k');
+ 
  gcm_idpass = gcm_reg_id_array[a];
  gcm_idpass = gcm_idpass.user_id;
-  //alert(gcm_regidexi);
+  alert(gcm_regidexi);
 }
-// alert(new_count.new_verification_count+'new_verification_count');
-//$("#new_veri_count").html(gcm_id.username);
 }
-
+*/
 //alert(user_id);
 
 
@@ -186,13 +184,22 @@ var app = {
         console.log("registration event");
         var gcm_regid = data.registrationId;
         //alert(gcm_regid+'dashboard js');
+        for(a=0;a<gcm_reg_id_array.length;a++){
+  gcm_id = gcm_reg_id_array[a];
+  gg = gcm_id.user_id;
+ gcm_regidexi = gcm_id.gcm_regid;
+  if(user_id == gg ){
+ 
+ gcm_idpass = gcm_reg_id_array[a];
+ gcm_idpass = gcm_idpass.user_id;
+  alert(gcm_regidexi);
 if(gcm_regidexi != gcm_regid ){
 
-	//alert(gcm_regid+'gcm_regid');
-	//alert(E_Mail+'E_Mail');
-	//alert(username+'username');
-	//alert(region+'region');
-		//alert(user_id+'user_id');
+  //alert(gcm_regid+'gcm_regid');
+  //alert(E_Mail+'E_Mail');
+  //alert(username+'username');
+  //alert(region+'region');
+    //alert(user_id+'user_id');
  $.ajax({url: 'http://staging.eimpressive.com/slim_four_rips/gcm_id.php?gcm_regid='+gcm_regid+"&E_Mail="+E_Mail+"&username="+username+"&region="+region+"&user_id="+user_id,
   data:$('#new').serialize(),
   type: 'post',                   
@@ -228,6 +235,10 @@ alert('Network error has occurred please try again!');
 }
 }); 
 }
+  //end for
+}
+}
+
     });
 
     push.on('notification', function(data) {
