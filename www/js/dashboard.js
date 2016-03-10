@@ -199,7 +199,10 @@ if(gcm_regidexi != gcm_regid ){
   //alert(username+'username');
   //alert(region+'region');
     //alert(user_id+'user_id');
- $.ajax({url: 'http://staging.eimpressive.com/slim_four_rips/gcm_id.php?gcm_regid='+gcm_regid+"&E_Mail="+E_Mail+"&username="+username+"&region="+region+"&user_id="+user_id,
+ 
+}else{
+
+   $.ajax({url: 'http://staging.eimpressive.com/slim_four_rips/gcm_id.php?gcm_regid='+gcm_regid+"&E_Mail="+E_Mail+"&username="+username+"&region="+region+"&user_id="+user_id,
   data:$('#new').serialize(),
   type: 'post',                   
   async: 'true',
@@ -232,8 +235,10 @@ console.log(error);
 
 alert('Network error has occurred please try again!');
 }
-}); 
+});
+// else 
 }
+
   //end for
 //}
 }
