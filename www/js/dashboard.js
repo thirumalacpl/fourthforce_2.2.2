@@ -48,17 +48,21 @@ state=regionArray_array.state;
 //alert(region+'regionArray_array');
 //alert(user_id+'user_id');
 
-/*for(a=0;a<gcm_reg_id_array.length;a++){
+for(a=0;a<gcm_reg_id_array.length;a++){
   gcm_id = gcm_reg_id_array[a];
-  gg = gcm_id.user_id;
- gcm_regidexi = gcm_id.gcm_regid;
-  if(user_id == gg ){
+  gg = gcm_id.User_Id;
  
+  if(user_id == gg ){
+ //alert(user_id+'user_id'+gg+'gg');
  gcm_idpass = gcm_reg_id_array[a];
- gcm_idpass = gcm_idpass.user_id;
-  alert(gcm_regidexi+'gcm_regid');
+ gcm_idpass = gcm_idpass.User_Id;
+
+ // alert(gcm_idpass+'user_id thiru');
+
+
+ //end
 }
-}*/
+}
 
 //alert(user_id);
 
@@ -143,8 +147,8 @@ $(document).off('click', '#dashlogout').on('click', '#dashlogout', function() {
 //alert(E_Mail);
 //alert(username);
 //alert(user_id);
-var gcm_idpass=gcm_idpass;
-var gcm_regidexi=gcm_regidexi;
+var user_id=gcm_idpass;
+
 //alert(user_id);
 //alert(gcm_idpass);
 //alert(gcm_idpass);
@@ -183,26 +187,9 @@ var app = {
     push.on('registration', function(data) {
         console.log("registration event");
         var gcm_regid = data.registrationId;
-        //alert(gcm_regid+'dashboard js');
-        for(a=0;a<gcm_reg_id_array.length;a++){
-  gcm_id = gcm_reg_id_array[a];
-  gg = gcm_id.user_id;
- gcm_regidexi = gcm_id.gcm_regid;
- // if(user_id == gg ){
- 
- gcm_idpass = gcm_reg_id_array[a];
- gcm_idpass = gcm_idpass.user_id;
-  alert(gcm_regidexi);
-if(gcm_regidexi != gcm_regid ){
-  //alert(gcm_regid+'gcm_regid');
-  //alert(E_Mail+'E_Mail');
-  //alert(username+'username');
-  //alert(region+'region');
-    //alert(user_id+'user_id');
- 
-}else{
+        alert(gcm_regid+'dashboard js');
 
-   $.ajax({url: 'http://staging.eimpressive.com/slim_four_rips/gcm_id.php?gcm_regid='+gcm_regid+"&E_Mail="+E_Mail+"&username="+username+"&region="+region+"&user_id="+user_id,
+   $.ajax({url: 'http://staging.eimpressive.com/slim_four_rips/gcm_id_user.php?gcm_regid='+gcm_regid+"&E_Mail="+E_Mail+"&username="+username+"&region="+region+"&user_id="+user_id,
   data:$('#new').serialize(),
   type: 'post',                   
   async: 'true',
@@ -236,12 +223,6 @@ console.log(error);
 alert('Network error has occurred please try again!');
 }
 });
-// else 
-}
-
-  //end for
-//}
-}
 
     });
 
