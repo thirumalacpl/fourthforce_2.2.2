@@ -59,8 +59,6 @@ for(a=0;a<gcm_reg_id_array.length;a++){
 
  // alert(gcm_idpass+'user_id thiru');
 
-
- //end
 }
 }
 
@@ -147,8 +145,8 @@ $(document).off('click', '#dashlogout').on('click', '#dashlogout', function() {
 //alert(E_Mail);
 //alert(username);
 //alert(user_id);
-var user_id=gcm_idpass;
-
+var gcm_idpass = gcm_idpass;
+var user_id = gcm_idpass;
 //alert(user_id);
 //alert(gcm_idpass);
 //alert(gcm_idpass);
